@@ -33,7 +33,7 @@ class DemoTests(unittest.TestCase):
         el_username.text
         el_password = self.driver.find_element_by_id(id_="userPwd")
         #找到之后就是对这些元素进行对应的动作，例如输入 、点击 等等
-        #el_username.send_keys("13716983483")
+        #el_username.send_keys("13800138000")
         sleep(3)
         na = self.driver.find_elements_by_name(name="请输入手机号/黄金卡号")
         for i in na:
@@ -41,7 +41,7 @@ class DemoTests(unittest.TestCase):
             i.send_keys("13716983483")
         el_password.send_keys("qwer1234")
         sleep(4)
-        #当然你也可以这么写 self.driver.find_element_by_id(id_="userPwd").send_keys("naonao0314")
+        #当然你也可以这么写 self.driver.find_element_by_id(id_="userPwd").send_keys("xxxxx")
         #点击登录按钮
         self.driver.find_element_by_id(id_="submitbtn").click()
         sleep(5)
