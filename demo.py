@@ -9,8 +9,8 @@ class DemoTests(unittest.TestCase):
         desired_caps['platformName'] = 'Android'
         desired_caps['deviceName'] = '2a22cee'
         #可以在这里进行相关参数配置
-        desired_caps['appPackage'] = 'com.anbang.pay'
-        desired_caps['appActivity'] = 'com.anbang.pay.activity.login.LoginActivity'
+        desired_caps['appPackage'] = ''
+        desired_caps['appActivity'] = ''
         #此处可配置Appium服务的地址，本例的服务端为本机
         self.driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub',desired_caps)
     def tearDown(self):
